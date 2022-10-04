@@ -8,4 +8,15 @@
     font-size: 20px;
     margin: 5px;
     border-radius: 50px;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+
+.button_wrapper:hover {background-color: #614f39}
+
+.button_wrapper:active {
+  background-color: #0e0e0d;
+  box-shadow: 0 5px rgb(54, 52, 52);
+  transform: translateY(4px);
 }
