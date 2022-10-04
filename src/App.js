@@ -6,7 +6,7 @@ import {useState} from 'react'
 function App() {
   const [input,inputSet] = useState("");
   const [result,resultSet] = useState("");
-  
+  // print pressed value on the screen
   const viewText = (val) =>{
     inputSet((input) => [...input,val,""])
   };
@@ -17,26 +17,26 @@ function App() {
         <Screens input = {input} result = {result}/>
           <div className='row'>
           <Button symbol="7" handelClick={viewText}/>
-          <Button symbol="8"/>
-          <Button symbol="9"/>
+          <Button symbol="8" handelClick={viewText}/>
+          <Button symbol="9" handelClick={viewText}/>
           <Button symbol="/" color="#DE9D3F"/>
           </div>
           <div className='row'>
-          <Button symbol="4" />
-          <Button symbol="5"/>
-          <Button symbol="6"/>
+          <Button symbol="4" handelClick={viewText} />
+          <Button symbol="5" handelClick={viewText}/>
+          <Button symbol="6" handelClick={viewText}/>
           <Button symbol="-" color="#DE9D3F"/>
           </div>
           <div className='row'>
-          <Button symbol="1"/>
-          <Button symbol="2"/>
-          <Button symbol="3"/>
+          <Button symbol="1" handelClick={viewText}/>
+          <Button symbol="2" handelClick={viewText}/>
+          <Button symbol="3" handelClick={viewText}/>
           <Button symbol="+" color="#DE9D3F"/>
           </div>
           <div className='row'>
-          <Button symbol="0"/>
-          <Button symbol="."/>
-          <Button symbol="="/>
+          <Button symbol="0" handelClick={viewText}/>
+          <Button symbol="." handelClick={viewText}/>
+          <Button symbol="=" handelClick={viewText}/>
           <Button symbol="*" color="#DE9D3F"/>
           </div>
           <Button symbol="clear" color="#DE9D3F"/>
