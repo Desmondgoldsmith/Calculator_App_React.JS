@@ -1,3 +1,24 @@
+# CALCULATOR APP WITH REACT.JS
+
+
+## CLONE THIS REPO
+git clone https://github.com/Desmondgoldsmith/Calculator_App_React.JS.git
+ 
+## IMPORTANT PACKAGES
+pip install mathjs
+
+## SCREENSHOTS
+![Screenshot 2022-10-04 at 16 02 51](https://user-images.githubusercontent.com/62439177/193873498-cbdb8e36-e71b-4d63-b136-2966aa0c40a3.png)
+
+
+https://user-images.githubusercontent.com/62439177/193873519-de94ba39-629f-4f5d-af2c-778953be98a1.mov
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
