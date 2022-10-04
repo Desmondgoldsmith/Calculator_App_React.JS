@@ -11,6 +11,14 @@ function App() {
     inputSet((input) => [...input,val,""])
   };
 
+  // clear input values
+  const Clear = () =>{
+    inputSet("");
+    resultSet("");
+  }
+
+  
+
   return (
     <div className="App">
        <div className='calc_wrapper'>
@@ -19,27 +27,27 @@ function App() {
           <Button symbol="7" handelClick={viewText}/>
           <Button symbol="8" handelClick={viewText}/>
           <Button symbol="9" handelClick={viewText}/>
-          <Button symbol="/" color="#DE9D3F"/>
+          <Button symbol="/" handelClick={viewText} color="#DE9D3F"/>
           </div>
           <div className='row'>
           <Button symbol="4" handelClick={viewText} />
           <Button symbol="5" handelClick={viewText}/>
           <Button symbol="6" handelClick={viewText}/>
-          <Button symbol="-" color="#DE9D3F"/>
+          <Button symbol="-" handelClick={viewText} color="#DE9D3F"/>
           </div>
           <div className='row'>
           <Button symbol="1" handelClick={viewText}/>
           <Button symbol="2" handelClick={viewText}/>
           <Button symbol="3" handelClick={viewText}/>
-          <Button symbol="+" color="#DE9D3F"/>
+          <Button symbol="+" handelClick={viewText} color="#DE9D3F"/>
           </div>
           <div className='row'>
           <Button symbol="0" handelClick={viewText}/>
           <Button symbol="." handelClick={viewText}/>
           <Button symbol="=" handelClick={viewText}/>
-          <Button symbol="*" color="#DE9D3F"/>
+          <Button symbol="*" handelClick={viewText} color="#DE9D3F"/>
           </div>
-          <Button symbol="clear" color="#DE9D3F"/>
+          <Button symbol="clear" handelClick={Clear} color="#DE9D3F"/>
        </div>
     </div>
   );
