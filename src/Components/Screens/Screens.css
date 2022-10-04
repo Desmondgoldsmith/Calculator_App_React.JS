@@ -1,0 +1,21 @@
+.screen_wrapper{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 10em;
+    flex-direction: column;
+}
+
+.result{
+    flex: 1;
+    font-size: 30px;
+    padding-right:0.5em ;
+
+}
+
+.input{
+     flex: 1;
+     font-size: 22px;
+     padding-right:0.6em ;
+
+}
