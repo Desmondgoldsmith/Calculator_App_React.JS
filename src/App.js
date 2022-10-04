@@ -4,14 +4,19 @@ import Screens from './Components/Screens/Screens';
 import {useState} from 'react'
 
 function App() {
-  const [input,inputSet] = useState("0");
-  const [result,resultSet] = useState("0.000");
+  const [input,inputSet] = useState("");
+  const [result,resultSet] = useState("");
+  
+  const viewText = (val) =>{
+    inputSet((input) => [...input,val,""])
+  };
+
   return (
     <div className="App">
        <div className='calc_wrapper'>
         <Screens input = {input} result = {result}/>
           <div className='row'>
-          <Button symbol="7" />
+          <Button symbol="7" handelClick={viewText}/>
           <Button symbol="8"/>
           <Button symbol="9"/>
           <Button symbol="/" color="#DE9D3F"/>
